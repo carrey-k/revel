@@ -1,6 +1,6 @@
 FROM golang:1.14
 
-MAINTAINER Chengkun Kang <chengkun.kang@sanofi.com>
+LABEL maintainer="460876880@qq.com"
 
 ENV GOPATH /go
 ENV HTTP_PROXY "http://7.40.23.198:3128"
