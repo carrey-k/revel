@@ -12,11 +12,12 @@ RUN set -x \
 
 # Install node
 ENV NODE_VERSION "14.5.0"
-ENV NODE_ZIP "node-v$NODE_VERSION-linux-x64.tar.xz"
+ENV NODE_ZIP "node-v$NODE_VERSION-linux-x64.tar.gz"
 
-RUN wget -P downloads https://nodejs.org/dist/v$NODE_VERSION/$NODE_ZIP && \
-    tar -C /usr/local --strip-components 1 -xJf downloads/$NODE_ZIP && \
-    rm -rf downloads
+RUN curl -SLO https://nodejs.org/dist/v$NODE_VERSION/$NODE_ZIP && \
+    tar -xzf "$NODE_ZIP" -C /usr/local --strip-components 1 && \
+    rm "$NODE_ZIP" && \
+    node -v && npm -v && revel version
 
 # clear apt cache and remove unnecessary packages
 # RUN apt-get autoclean && apt-get -y autoremove
