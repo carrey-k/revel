@@ -16,8 +16,8 @@
 
 ### Node:
 
-* `latest` _[(/node/go-1.14.4/Dockerfile)](https://github.com/kangchengkun/revel/blob/master/node/go-1.14.x/node-14.5.0/Dockerfile)_
-* `1.0.0` _[(/node/go-1.14.4/Dockerfile)](https://github.com/kangchengkun/revel/blob/master/node/go-1.14.x/node-14.5.0/Dockerfile)_
+* `latest` _[(/node/go-1.14.4/node-14.5.0/Dockerfile)](https://github.com/kangchengkun/revel/blob/master/node/go-1.14.x/node-14.5.0/Dockerfile)_
+* `1.0.0` _[(/node/go-1.14.4/node-14.5.0/Dockerfile)](https://github.com/kangchengkun/revel/blob/master/node/go-1.14.x/node-14.5.0/Dockerfile)_
 
 ## Docker Images:
 
