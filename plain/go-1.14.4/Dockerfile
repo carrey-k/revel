@@ -1,6 +1,6 @@
 FROM ubuntu:18.04
 
-MAINTAINER Chengkun Kang <chengkun.kang@sanofi.com>
+LABEL maintainer="Chengkun Kang <chengkun.kang@sanofi.com>"
 
 ENV HTTP_PROXY "http://7.40.23.198:3128"
 ENV HTTPS_PROXY "http://7.40.23.198:3128"
@@ -8,21 +8,21 @@ ENV HTTPS_PROXY "http://7.40.23.198:3128"
 # Install libraries
 RUN apt-get update -qq \
     && apt-get install -yq cmake \
-                           fceux \
-                           gcc \
-                           libboost-all-dev \
-                           libjpeg-dev \
-                           libsdl2-dev \
-                           make \
-                           unzip \
-                           wget \
-                           zlib1g-dev \
-                           supervisor \
-                           git \
-                           curl \
-                           mercurial \
-                           nodejs
-                        
+    fceux \
+    gcc \
+    libboost-all-dev \
+    libjpeg-dev \
+    libsdl2-dev \
+    make \
+    unzip \
+    wget \
+    zlib1g-dev \
+    supervisor \
+    git \
+    curl \
+    mercurial \
+    nodejs
+
 
 # Install go tarball
 ENV GOLANG_VERSION 1.14.4

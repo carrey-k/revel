@@ -8,7 +8,7 @@ ENV HTTPS_PROXY "http://7.40.23.198:3128"
 
 RUN set -x \
     && go get -v github.com/revel/revel \
-    && go get -v github.com/revel/cmd/revel
+    && go get -v github.com/revel/cmd/revel \
     && go get -u github.com/jinzhu/copier \
     && go get -u github.com/golang/protobuf/proto \
     && go get -u github.com/globalsign/mgo/bson \
@@ -19,7 +19,7 @@ RUN set -x \
     && go get -u github.com/teris-io/shortid \
     && go get -u github.com/tealeg/xlsx \
     && go get -u google.golang.org/grpc \
-    && go get -u gopkg.in/lujiacn/mgodo.v0 \
+    && go get -u gopkg.in/lujiacn/mgodo.v0
 
 # clear apt cache and remove unnecessary packages
 # RUN apt-get autoclean && apt-get -y autoremove
