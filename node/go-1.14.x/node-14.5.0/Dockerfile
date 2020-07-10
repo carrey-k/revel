@@ -8,7 +8,18 @@ ENV HTTPS_PROXY "http://7.40.23.198:3128"
 
 RUN set -x \
     && go get -v github.com/revel/revel \
-    && go get -v github.com/revel/cmd/revel
+    && go get -v github.com/revel/cmd/revel \
+    && go get -u github.com/jinzhu/copier \
+    && go get -u github.com/golang/protobuf/proto \
+    && go get -u github.com/globalsign/mgo/bson \
+    && go get -u github.com/lujiacn/revpage \
+    && go get -u github.com/lujiacn/utils \
+    && go get -u github.com/lujiacn/revauth \
+    && go get -u github.com/lujiacn/revel-csrf \
+    && go get -u github.com/teris-io/shortid \ 
+    && go get -u github.com/tealeg/xlsx \
+    && go get -u google.golang.org/grpc \
+    && go get -u gopkg.in/lujiacn/mgodo.v0 \
 
 # Install node
 ENV NODE_VERSION "14.5.0"
