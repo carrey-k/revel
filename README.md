@@ -5,19 +5,26 @@
 1. Plain: `GOLANG` and `REVEL framework`.
 2. Node: `GOLANG`, `REVEL framework` and `Node`.
 
+## Versions
+|Name|Version|
+|-----|------|
+|GOLANG|1.14.4|
+|REVEL|1.0.0|
+|NodeJS|14.5.0|
+
 
 ## Supported tags and respective `Dockerfile` link:
 
 ### Plain:
 
 * `latest` _[(/plain/go-1.14.x/Dockerfile)](https://github.com/kangchengkun/revel/blob/master/plain/go-1.14.x/Dockerfile)_
-* `1.0.0` _[(/plain/go-1.14.4/Dockerfile)](https://github.com/kangchengkun/revel/blob/master/plain/go-1.14.4/Dockerfile)_
+* `1.0.2` _[(/plain/go-1.14.4/Dockerfile)](https://github.com/kangchengkun/revel/blob/master/plain/go-1.14.4/Dockerfile)_
 
 
 ### Node:
 
 * `latest` _[(/node/go-1.14.4/node-14.5.0/Dockerfile)](https://github.com/kangchengkun/revel/blob/master/node/go-1.14.x/node-14.5.0/Dockerfile)_
-* `1.0.0` _[(/node/go-1.14.4/node-14.5.0/Dockerfile)](https://github.com/kangchengkun/revel/blob/master/node/go-1.14.x/node-14.5.0/Dockerfile)_
+* `1.0.2` _[(/node/go-1.14.4/node-14.5.0/Dockerfile)](https://github.com/kangchengkun/revel/blob/master/node/go-1.14.x/node-14.5.0/Dockerfile)_
 
 ## Docker Images:
 
