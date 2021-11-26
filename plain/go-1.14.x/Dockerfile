@@ -3,8 +3,8 @@ FROM golang:1.14
 LABEL maintainer="460876880@qq.com"
 
 ENV GOPATH /go
-ENV HTTP_PROXY "http://7.40.23.198:3128"
-ENV HTTPS_PROXY "http://7.40.23.198:3128"
+# ENV HTTP_PROXY "http://your-own-proxy-addr.your-org.com:3128"
+# ENV HTTPS_PROXY "http://your-own-proxy-addr.your-org.com:3128"
 
 RUN set -x \
     && go get -u -v github.com/revel/revel \

@@ -1,4 +1,4 @@
-FROM golang:1.14
+FROM golang:1.15
 
 LABEL maintainer="Chengkun Kang <460876880@qq.com>"
 
@@ -8,21 +8,27 @@ ENV GOPATH /go
 
 RUN set -x \
     && go get -u -v github.com/revel/revel \
-    && go get -u -v github.com/revel/cmd/revel \
+    && go get -u -v github.com/revel/cmd \
+    && go get -u -v github.com/revel/config \
+    && go get -u -v github.com/revel/cron \
+    && go get -u -v github.com/revel/modules \
     && go get -u github.com/jinzhu/copier \
     && go get -u github.com/golang/protobuf/proto \
     && go get -u github.com/globalsign/mgo/bson \
+    && go get -u github.com/lujiacn/gtf \
     && go get -u github.com/lujiacn/revpage \
     && go get -u github.com/lujiacn/utils \
     && go get -u github.com/lujiacn/revauth \
+    && go get -u github.com/lujiacn/revstatic \
     && go get -u github.com/lujiacn/revel-csrf \
     && go get -u github.com/teris-io/shortid \ 
-    && go get -u github.com/tealeg/xlsx \
-    && go get -u google.golang.org/grpc \
-    && go get -u gopkg.in/lujiacn/mgodo.v0
+    && go get -u golang.org/x/net \
+    && go get -u golang.org/x/sys \
+    && go get -u golang.org/x/tools \
+    && go get -u google.golang.org/grpc
 
 # Install node
-ENV NODE_VERSION "14.5.0"
+ENV NODE_VERSION "14.18.0"
 ENV NODE_ZIP "node-v$NODE_VERSION-linux-x64.tar.gz"
 
 RUN curl -SLO https://nodejs.org/dist/v$NODE_VERSION/$NODE_ZIP && \

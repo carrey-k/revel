@@ -1,9 +1,9 @@
 FROM ubuntu:18.04
 
-LABEL maintainer="Chengkun Kang <chengkun.kang@sanofi.com>"
+LABEL maintainer="Chengkun Kang <460876880@qq.com>"
 
-ENV HTTP_PROXY "http://7.40.23.198:3128"
-ENV HTTPS_PROXY "http://7.40.23.198:3128"
+# ENV HTTP_PROXY "http://your-own-proxy-addr.your-org.com:3128"
+# ENV HTTPS_PROXY "http://your-own-proxy-addr.your-org.com:3128"
 
 # Install libraries
 RUN apt-get update -qq \
